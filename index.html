@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <style>
         @font-face {
             font-family: PressStart2P;
@@ -84,19 +85,89 @@
         div:hover {
            transform: scale(2.1);
            }
+           ol {
+               /* list-style-image: url(images/Funk-Soul2.jpeg); */
+               list-style: none;
+           }
 
-        body {background-image: url(images/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+           li::before {
+                /* padding-right: 15px; */
+                /* content: "❂";  */
+
+                content: '';
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+                background-image: url(images/Funk-Soul2.jpeg);
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                animation-name: heartBeat;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+
+                vertical-align: middle;
+            }
+            #rect {
+                animation-name: rainbow;
+                animation-duration: 2s;
+
+                /* animation-duration: 1s; */
+                /* animation-duration: var(--animate-duration); */
+                animation-fill-mode: none;
+
+            }
+
+
+            @keyframes rainbow {
+                0% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    background-color: blue;
+                }
+                14% {
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3);
+                }
+                28% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                42% {
+                    -webkit-transform: scale(1.3);
+                    transform: scale(1.3)
+                }
+                50% {
+                    background-color: green;
+                }
+                70% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                }
+                100% {
+                    background-color: yellow;                    
+                }
+            }
+
+
+        body {
+            background-image: url(images/1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
     }
         #thumbnail {box-shadow: 0 10px 20px rgba(0,0,0,0.54), 0 6px 6px rgba(0,0,0,0.54);}
     </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
 
     <title>Методы обработки кофейных ягод</title>
 </head>
 
 <body>
-    <h1 align="center" class="title-text">Методы обработки кофейных ягод</h1>
+    <h1 align="center" id="rect" class="title-text">Методы обработки кофейных ягод</h1>
     <div class="thumb">
         <span class="infostyle1">натуральная</span>
         <img class="design1" id="thumbnail" src="images/natural.jpg" alt="натуральная обработка" width="250" hight="250">
