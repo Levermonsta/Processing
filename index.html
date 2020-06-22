@@ -82,9 +82,9 @@
     margin-left: 130px;
     display: inline-block;
     position: relative;}
-        div:hover {
+        /* div:hover {
            transform: scale(2.1);
-           }
+           } */
            ol {
                /* list-style-image: url(images/Funk-Soul2.jpeg); */
                list-style: none;
@@ -150,13 +150,252 @@
                     background-color: yellow;                    
                 }
             }
+    .container {
+    font-size: 40px;
+    min-height: 100px;
+    width: 500px;
+    background: transparent;
+    display: grid;
+    margin-top: 40px;
+    margin-left: 540px;
+    margin-bottom: 30px;
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
+    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr;
+    /* grid-gap: 10px; */
+  }
+  .item1{background: linear-gradient(45deg,red,#ff4400,#ffee00);border-radius: 5%;font-size: 13px;font-family: PressStart2P;padding-top: 13px;padding-left: 5px;}
+  .item2{background: linear-gradient(60deg,#60ff21,#4bfccd,#0419ff);border-radius: 5%;font-size: 13px;font-family: PressStart2P;padding-top: 13px;padding-left: 40px;}
+  .item3{background:linear-gradient(70deg,#ffaa00,#ffea00,#f4ff79);border-radius: 5%;font-size: 13px;font-family: PressStart2P;padding-top: 13px;padding-left: 47px;}
+  .item4{background:linear-gradient(45deg,#ec5cff,#faa0ff,#ffd7e9);border-radius: 5%;font-size: 13px;font-family: PressStart2P;font-size: 9px;font-family: PressStart2P;padding-top: 13px;padding-left: 0px;}
+  .item5{background:linear-gradient(45deg,#96330b,#e64a0d,#ff6a00);border-radius: 5%;font-size: 13px;font-family: PressStart2P;font-size: 13px;font-family: PressStart2P;padding-top: 11px;padding-left: 20px;}
+  .item6{background:linear-gradient(45deg,#f5f4ff,#e1ffda,#fffbf4);border-radius: 5%;font-size: 15px;font-family: PressStart2P;padding-left: 35px;padding-top: 4px;}
+  
+  .item1:hover {
+    animation-name: jello;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    
+  }
+  .item2:hover {
+    animation-name: shakeX;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    
+  }
+  .item3:hover {
+    animation-name: shakeY;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    
+  }
+  .item4:hover {
+    animation-name: flash;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    
+  }
+  .item5:hover {
+    animation-name: heartBeat;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+    
+  }
+  .item6:hover {
+    animation-name: pulse;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    
+  }
 
-
+  .item1 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: -4px;
+      margin-top: -10px;
+      
+      }
+  .item2 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: -38px;
+      margin-top: -10px;
+      
+      }
+      .item3 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: -45px;
+      margin-top: -10px;
+      
+      }
+      .item4 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: 1px;
+      margin-top: -10px;
+      
+      }
+    
+      .item5 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: -18px;
+      margin-top: -5px;
+      
+      }
+      .item6 a {
+      display: block;
+      color: transparent;
+      text-align: center;
+      height: 30px;
+      width: 150px;
+      position: absolute;
+      padding-left: -50px;
+      margin-left: -34px;
+      margin-top: 0px;
+      
+      }
         body {
             background-image: url(images/1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-    }
+             }
+        .balls1 {
+        border-radius: 50%;
+        position: fixed;
+        width: 5px;
+        height: 5px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 8s;
+        animation-iteration-count: infinite; 
+        }
+        #white1 {
+        background:yellow;
+        left: 4%;
+        animation-timing-function: linear;
+       }
+       .balls2 {
+        border-radius: 50%;
+        position: fixed;
+        width: 3px;
+        height: 3px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; 
+        }
+        #white2 {
+        background: yellow;
+        left: 17%;
+        animation-timing-function: linear;
+        }
+        .balls3 {
+        border-radius: 50%;
+        position: fixed;
+        width: 6px;
+        height: 6px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 7s;
+        animation-iteration-count: infinite; 
+        }
+        #white3 {
+        background: yellow;
+        left: 32%;
+        animation-timing-function: linear;
+        }
+        .balls4 {
+        border-radius: 50%;
+        position: fixed;
+        width: 4px;
+        height: 4px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 9s;
+        animation-iteration-count: infinite; 
+        }
+        #white4 {
+        background: yellow;
+        left: 47%;
+        animation-timing-function: linear;
+        }
+        .balls5 {
+        border-radius: 50%;
+        position: fixed;
+        width: 5px;
+        height: 5px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 8s;
+        animation-iteration-count: infinite; 
+        }
+        #white5 {
+        background: yellow;
+        left: 62%;
+        animation-timing-function: linear;
+        }
+        .balls6 {
+        border-radius: 50%;
+        position: fixed;
+        width: 2px;
+        height: 2px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 12s;
+        animation-iteration-count: infinite; 
+        }
+        #white6 {
+        background: yellow;
+        left: 80%;
+        animation-timing-function: linear;
+        }
+        .balls7 {
+        border-radius: 50%;
+        position: fixed;
+        width: 3px;
+        height: 3px;
+        top: 100%;
+        animation-name: jump;
+        animation-duration: 10s;
+        animation-iteration-count: infinite; 
+        }
+        #white7 {
+        background: yellow;
+        left: 96%;
+        animation-timing-function: linear;
+        }
+        @keyframes jump {
+    100% {
+      top: 0%;
+         }                       
+        }
         #thumbnail {box-shadow: 0 10px 20px rgba(0,0,0,0.54), 0 6px 6px rgba(0,0,0,0.54);}
     </style>
 
@@ -206,4 +445,20 @@
         Из-за такого эффекта центральноамериканские производители выделили несколько подвидов хани обработки: белый хани, жёлтый хани, красный хани, черный хани.
         Способ обработки белый хани, то есть сушка кофе с минимальным количеством мякоти называется палп нэчурал в Бразилии или полумытой обработкой в некоторых центральноамериканских странах.
     </p>
+    <div class="balls1" id="white1"></div>
+    <div class="balls2" id="white2"></div>
+    <div class="balls3" id="white3"></div>
+    <div class="balls4" id="white4"></div>
+    <div class="balls5" id="white5"></div>
+    <div class="balls6" id="white6"></div>
+    <div class="balls7" id="white7"></div>
+    <p align="center" class="p-text"><strong class="strongsize">Нажми куда-нибудь:</strong></p>
+    <div class="container">
+        <div class="item1"><a target="_blank" href="https://static-eu.insales.ru/files/1/269/3039501/original/%D1%81%D1%83%D1%85%D0%B0%D1%8F_%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0.jpg">пикча</a>натуральная</div>
+        <div class="item2"><a target="_blank" href="https://static-eu.insales.ru/files/1/272/3039504/original/%D0%B2%D0%BB%D0%B0%D0%B6%D0%BD%D0%B0%D1%8F_%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0.jpg">пикча</a>мытая</div>
+        <div class="item3"><a target="_blank" href="https://www.coffeeproject.ru/blog/wp-content/uploads/2018/10/main1-14.jpg">пикча</a>хани</div>
+        <div class="item4"><a target="_blank" href="https://shop.tastycoffee.ru/files/shares/data/blog/experimentalnaya-obrabotka-kofe/image6.png">пикча</a>экспериментальная</div>
+        <div class="item5"><a target="_blank" href="https://www.comunicaffe.it/wp-content/uploads/2019/09/Gambrinus-tazza.jpg">пикча</a>экспрессо</div>
+        <div class="item6"><a target="_blank" href="https://shop-cdn1.vigbo.tech/shops/54272/products/12443708/images/3-f3164c83590f65c57a208fdd07e3ecb2.jpg">пикча</a>не пью кофе</div>
+      </div>
 </body>
